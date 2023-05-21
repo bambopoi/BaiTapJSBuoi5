@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- BÀI TẬP 1 -->
+    <div class="themes" style="background-color: antiquewhite;">
+      <h1>QUẢN LÝ TUYỂN SINH</h1>
+      <input id="benchmarkInput" type="text" placeholder="Điểm chuẩn" />
+      <input id="subject1" type="text" placeholder="điểm môn 1" />
+      <input id="subject2" type="text" placeholder="điểm môn 2" />
+      <input id="subject3" type="text" placeholder="điểm môn 3" />
+      <select name="" id="areaSelect">
+        <option>khu vực</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="x">Không</option>
+      </select>
+      <select name="" id="typeSelect">
+        <option>loại đối tượng</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="0">Không</option>
+      </select>
+      <button id="btnSubmit">kiểm tra</button>
+      <span id="ketQua"></span>
+    </div>
+
+    <!-- BÀI TẬP 2 -->
+    <div class="themes" style="background-color: beige;">
+      <h1>TÍNH TIỀN ĐIỆN</h1>
+      <input id="ten2" type="text" placeholder="Nhập họ tên" />
+      <input id="num2" type="number" placeholder="Nhập số kw" />
+      <button id="btn2">Tính tiên điện</button>
+      <span id="ketQua2"></span>
+    </div>
+
+    <!-- BÀI TẬP 3 -->
+    <div class="themes" style="background-color: bisque;">
+      <h1>TÍNH THUẾ THU NHẬP CÁ NHÂN</h1>
+      <input id="name3" type="text" placeholder="Nhập họ tên" />
+      <input id="thuNhap" type="number" placeholder="Tổng thu nhập năm" />
+      <input id="soNguoi" type="number" placeholder="Số người phụ thuộc" />
+      <button id="btn3">Tính tiền thuế</button>
+      <span id="ketQua3"></span>
+    </div>
+
+    <!-- BÀI TẬP 4 -->
+    <div class="themes" style="background-color: blanchedalmond;">
+      <h1>TÍNH TIỀN CÁP</h1>
+      <input id="maKhach" type="text" placeholder="Nhập mã khách hàng" />
+      <input id="soKenh" type="number" placeholder="Số kênh cao cấp" />
+      <input
+        id="soKetNoi"
+        type="number"
+        placeholder="Số kết nối"
+        style="display: none"
+      />
+      <select name="" id="loaiKhach" onchange="showHide()">
+        <option value="X">Chọn loại khách hàng</option>
+        <option value="1">Nhà dân</option>
+        <option value="2">Doanh nghiệp</option>
+      </select>
+      <button id="btn4">Tính tiền cáp</button>
+      <span id="ketQua4"></span>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
